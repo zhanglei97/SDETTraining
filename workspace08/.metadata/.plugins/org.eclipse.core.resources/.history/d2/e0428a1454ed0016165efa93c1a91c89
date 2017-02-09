@@ -1,0 +1,30 @@
+package com.fannie.intf;
+
+public class PersonalLoan implements Loan {
+	private int amount;
+	@Override
+	public void submitLoan() {
+		// TODO Auto-generated method stub
+		System.out.println("Personal Loan submitted");
+	}
+
+	@Override
+	public void loanAmount(int amount) {
+		// TODO Auto-generated method stub
+		this.amount=amount;
+		System.out.println("Person loan amount set "+amount);
+	}
+
+	@Override
+	public void foreClosure() {
+		// TODO Auto-generated method stub
+		System.out.println("Personal Loan foreclosed with full " + this.amount);
+	}
+
+	@Override
+	public void foreClosure(int amount) {
+		// TODO Auto-generated method stub
+		System.out.println("Personal loan forecosed with " + (this.amount-amount));
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.fannie.dbworks;
+
+
+public class EmployeeDB {
+	public boolean  instertEmployee(EmpBean bean) throws InterruptedException{
+		//simulating it's connecting to db and doing operation
+		
+		Thread.sleep(1000);
+		return true;
+	}
+	
+	public EmpBean getEmployee(){
+		return new EmpBean();
+	}
+	
+
+}

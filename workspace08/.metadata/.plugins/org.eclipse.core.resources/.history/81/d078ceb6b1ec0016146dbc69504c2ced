@@ -1,0 +1,9 @@
+package com.fannie.inhe;
+
+public class VehicleClient {
+	public static void main(String[] args){
+		Vehicle [] vehicles = new Vehicle[5];
+		vehicles[0] = new Car("BMW");
+	}
+
+}

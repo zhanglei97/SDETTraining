@@ -1,0 +1,15 @@
+package com.fannie.excep;
+
+public class exp1 {
+	public static void main(String[] args) {
+		itg num1=20;
+		int num2 = 25;
+		
+		int res=num1/num2;
+		
+		System.out.println("result is "+res);
+		
+		System.out.println("someother business logic should be here too: ");
+	}
+
+}

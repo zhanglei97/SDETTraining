@@ -1,0 +1,45 @@
+package com.fannie.ass1;
+
+public class Bus extends Vehicle {
+	private int passengerCnt;
+	@Override
+	public String toString() {
+		return "Bus [passengerCnt=" + passengerCnt + ", psgNum=" + psgNum + ", getColor()=" + getColor()
+				+ ", getWheelCount()=" + getWheelCount() + ", getMake()=" + getMake() + ", getModel()=" + getModel()
+				+ "]";
+	}
+
+	private int psgNum;
+	
+	public int getPassengerCnt() {
+		return passengerCnt;
+	}
+
+
+	public void setPassengerCnt(int passengerCnt) {
+		System.out.println("total allowed passenger is "+passengerCnt);
+		this.passengerCnt = passengerCnt;
+	}
+
+
+	public Bus(String color, int wheelCount, String make, String model) {
+		super(color, wheelCount, make, model);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void loadPassenger(int psgNum){
+		this.psgNum=this.psgNum+psgNum;
+		System.out.println("onboard passensger is now "+this.psgNum);
+	}
+
+
+	@Override
+	public void move() {
+		// TODO Auto-generated method stub
+		System.out.println("bus move safely");
+		
+	}
+	
+	
+
+}

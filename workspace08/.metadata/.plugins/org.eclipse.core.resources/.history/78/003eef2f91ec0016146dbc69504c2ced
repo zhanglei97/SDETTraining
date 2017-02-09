@@ -1,0 +1,16 @@
+package com.fannie;
+
+import java.awt.PrintJob;
+
+public class HelloWorld {
+
+	public static void main(String args[]){
+		int x; 
+		int xb =10;
+		System.out.printf("Hello World");
+		System.out.printf("Hi");
+	}
+	
+}
+
+

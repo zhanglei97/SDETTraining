@@ -1,0 +1,17 @@
+package com.fannie.inhe;
+
+public class VehicleClient {
+	public static void main(String[] args){
+		Vehicle [] vehicles = new Vehicle[5];
+		vehicles[0] = new Car("BMW");
+		vehicles[1] = new Jeep("Blue", "Jeep", 4, 4);
+		vehicles[2 = new Jeep("red "Jeep", 4, 4);
+		vehicles[3 = new Jeep("greenJeep", 4, 4);
+		vehicles[4 = new Jeep("sand", 4, 4);
+		
+		for ( Vehicle temp: vehicles){
+			temp.move();
+		}
+	}
+
+}

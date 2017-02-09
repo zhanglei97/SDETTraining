@@ -1,0 +1,7 @@
+package com.fannie;
+
+public class Employee {
+	int empID ;
+	String empName;
+	float empSal;
+}

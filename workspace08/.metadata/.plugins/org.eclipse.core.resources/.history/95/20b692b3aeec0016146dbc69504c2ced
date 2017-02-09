@@ -1,0 +1,11 @@
+package com.fannie.inhe;
+
+public class CarClient {
+	public static void main(String[] args){
+		Car bmw = new Car();
+		bmw.setMake("BMW");
+		bmw.setModel("325");
+		
+		System.out.println("my car is "+bmw);
+	}
+}

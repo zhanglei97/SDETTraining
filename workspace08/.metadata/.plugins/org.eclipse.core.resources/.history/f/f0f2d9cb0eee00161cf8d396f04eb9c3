@@ -1,0 +1,54 @@
+
+public class UserException {
+
+}
+
+class FannieException extends Exception{
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return this.getMessage();
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return ":::" + this.msg+":::";
+	}
+
+	private String msg;
+	
+	FannieException(){
+		this.msg = "Fanni Exception called ...";
+	}
+	
+	FannieException(String msg){
+		this.msg=msg;
+	}
+	
+}
+
+class CitiException extends Exception{
+	private String msg;
+	
+	CitiException(){
+		this.msg="Citi Exception called ...";
+	
+	}
+	
+	CitiException(String msg){
+		this.msg=msg;
+	}
+	
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return this.getMessage();
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return ":::" + this.msg+":::";
+	}
+}

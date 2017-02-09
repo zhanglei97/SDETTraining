@@ -1,0 +1,37 @@
+package com.fannie.ass1;
+
+public class Truck extends Vehicle{
+	public Truck(String color, int wheelCount, String make, String model) {
+		super(color, wheelCount, make, model);
+		// TODO Auto-generated constructor stub
+	}
+
+	private int weight;
+
+	public int getWeight() {
+		return weight;
+	}
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+	
+	public void loadCargo(){
+		System.out.println("a truck will load cargo.");
+	}
+
+	@Override
+	public String toString() {
+		return "Truck [weight=" + weight + ", getColor()=" + getColor() + ", getWheelCount()=" + getWheelCount()
+				+ ", getMake()=" + getMake() + ", getModel()=" + getModel() + "]";
+	}
+	
+	@Override
+	public void move() {
+		// TODO Auto-generated method stub
+		System.out.println("Truck move heavly");
+		
+	}
+	
+
+}

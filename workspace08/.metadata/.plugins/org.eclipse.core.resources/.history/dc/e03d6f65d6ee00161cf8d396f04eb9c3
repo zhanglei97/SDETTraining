@@ -1,0 +1,21 @@
+package com.fannie.collections;
+
+import java.util.HashSet;
+import java.util.Set;
+
+//tree set
+public class SetExp3 {
+	public static void main(String[] args) {
+		Set<String> set = new HashSet<String>();
+		
+		set.add("aaa");
+		set.add("aaa");
+		set.add("aaa");
+		set.add("aaa");
+		set.add("aaa");
+		set.add("aaa");
+		set.add("aaa");
+		
+		System.out.println(set);
+	}
+}

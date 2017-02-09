@@ -1,0 +1,10 @@
+package com.fannie.inhe;
+
+public class FourWheeler extends Vehicle {
+	FourWheeler(){
+		System.out.println("all four wheelers will have steering");
+	}
+	public void sterling(){
+		System.out.println("all four wheelers will have steering");
+	}
+}

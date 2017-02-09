@@ -1,0 +1,14 @@
+package com.fannie.dbworks;
+
+
+public class EmployeeDB {
+	public boolean  instertEmployee(EmpBean bean){
+		return true;
+	}
+	
+	public EmpBean getEmployee(){
+		return new EmpBean();
+	}
+	
+
+}

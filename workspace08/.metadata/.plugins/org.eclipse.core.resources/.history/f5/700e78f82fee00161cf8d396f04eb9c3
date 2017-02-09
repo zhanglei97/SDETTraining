@@ -1,0 +1,36 @@
+package com.fannie.io;
+
+public class Customer {
+	private int cusId;
+	private int cusName;
+	
+	@Override
+	public String toString() {
+		return "Customer [cusId=" + cusId + ", cusName=" + cusName + "]";
+	}
+
+	public int getCusId() {
+		return cusId;
+	}
+
+	public void setCusId(int cusId) {
+		this.cusId = cusId;
+	}
+
+	public int getCusName() {
+		return cusName;
+	}
+
+	public void setCusName(int cusName) {
+		this.cusName = cusName;
+	}
+
+	public Customer(int cusId, int cusName) {
+		super();
+		this.cusId = cusId;
+		this.cusName = cusName;
+	}
+	
+	
+
+}

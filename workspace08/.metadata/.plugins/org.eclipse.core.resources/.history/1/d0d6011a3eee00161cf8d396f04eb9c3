@@ -1,0 +1,20 @@
+package com.fannie.io;
+
+import java.util.ArrayList;
+
+public class ListExp2 {
+	public static void main(String[] args) {
+		ArrayList<String> alst= new ArrayList<String>();
+		
+		alst.add("Hello");
+		alst.add("are");
+		
+		alst.add("you");
+		alst.add("ok");
+		
+		
+		
+		
+	}	
+
+}

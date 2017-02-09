@@ -1,0 +1,13 @@
+package com.fannie.intf;
+
+public class LoanClient {
+	public static void main(String[] args){
+		Loan[] loans =new Loan[4];
+		
+		loans[0]= new HomeLoan();
+		loans[1]=new PersonalLoan();
+		loans[2]= new HomeLoan();
+		loan[3] = new PersonalLoan();
+	}
+
+}

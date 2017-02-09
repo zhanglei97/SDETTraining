@@ -1,0 +1,29 @@
+package com.fannie.io;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ListExp2 {
+	public static void main(String[] args) {
+		ArrayList<String> alst= new ArrayList<String>();
+		
+		alst.add("Hello");
+		alst.add("are");
+		
+		alst.add("you");
+		alst.add("ok");
+		
+		Iterator<String> itr=alst.iterator();
+		while(itr.hasNext()){
+			String temp =itr.next();
+			System.out.println(temp);
+		}
+		
+		for (String temp: alst){
+			System.out.println(temp);
+		}
+		
+		
+	}	
+
+}

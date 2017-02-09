@@ -1,0 +1,16 @@
+package com.fannie.excep;
+
+public class Exp3 {
+	public static void chkSalary(double salary, String empName){
+		if(salary<1000){
+			throw new ArithmeticException("sorry salary is less, for "+empName+ " given "+salary);
+		}else{
+			System.out.println("Salary under process" + empName +" ,   "+salary);
+		}
+	}
+	public static void main(String[] args) {
+		chkSalary(100, "Brian");
+		chkSalary(10000, "Jason");
+		chkSalary(900, "Jon");
+	}
+}

@@ -1,0 +1,37 @@
+package com.fannie.threads;
+
+class MyBusiness implements Runnable{
+	Thread t;
+	
+	MyBusiness(String name, int priority){
+		t=new Thread(this);
+		t.setPriority(priority);
+		
+		//when start is invoked then it creates an os level thread
+		t.start();
+		
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for (int i=0; i<100; i++){
+			System.out.println(" do My business"+i+" in Thread "+Thread.currentThread().getName()+" priority: "+Thread.currentThread().getPriority());
+		}
+		System.out.println("Tread "+Thread.currentThread().getName()+" existing");
+		
+
+	}
+	
+	
+}
+public class RunnableEx1 {
+	
+	public static void main(String[] args) {
+		MyBusiness m1 = new MyBusiness("electronics", Thread.MAX_PRIORITY);
+		MyBusiness m2 = new MyBusiness("mortgage", Thread.MIN_PRIORITY);
+		MyBusiness m3 = new MyBusiness("Petmart", 3);
+		
+	}
+
+}

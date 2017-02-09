@@ -1,0 +1,19 @@
+package com.fannie.dbworks;
+
+class EmpBean{}
+
+public class EmployeeDB {
+	public boolean  instertEmployee(EmpBean bean){
+		return true;
+	}
+	
+	public EmpBean getEmployee(){
+		return new EmpBean();
+	}
+	
+	private void main() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

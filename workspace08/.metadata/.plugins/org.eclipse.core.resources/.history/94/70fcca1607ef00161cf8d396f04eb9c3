@@ -1,0 +1,36 @@
+package com.fannie.dbworks;
+
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class DBTest1 {
+	static EmployeeDB edb = new EmployeeDB();
+	static EmpBean bean = new EmpBean();
+	
+	@BeforeClass
+	public static void empObjectInit(){
+		System.out.println("before class called");
+		edb = new EmployeeDB();
+		bean = new EmpBean();
+	}
+	
+	@Test
+	public void getEmployeeNotNullTest(){
+		assertNotNull("Expected not null after getting employee", edb.getEmployee());
+		
+	}
+	
+	@Test
+	public void getEmployeeNullTest1(){
+		assertNull("Expected not null after getting employee", edb.getEmployee());
+		
+	}
+	
+	@Test
+	public void getEmployeeNullTest(){
+		
+	}
+}

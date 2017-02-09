@@ -1,0 +1,40 @@
+package com.fannie.excep;
+
+public class Account {
+	private int accId;
+	private double accBal;
+	private static int count=1000;
+	
+	public Account( double accBal) {
+		this.accBal = accBal;
+		this.accId = count++;
+	}
+
+	public int getAccId() {
+		System.out.println("account id is "+accId);
+		return accId;
+	}
+
+	public void setAccId(int accId) {
+		this.accId = accId;
+	}
+
+	public double getAccBal() {
+		System.out.println("account balance is "+accBal);
+		return accBal;
+	}
+
+	public void setAccBal(double accBal) {
+		this.accBal = accBal;
+	}
+
+	public static void main(String[] args) {
+		Account[] acts = {new Account(100), new Account(5924), new Account(88342), new Account(93584395)};
+		for (Account tmp: acts){
+			tmp.getAccId();
+			tmp.getAccBal();
+		}
+		
+	}
+
+}

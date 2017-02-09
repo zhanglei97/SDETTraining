@@ -1,0 +1,7 @@
+package com.fannie.inhe;
+
+public class FourWheeler {
+	public void sterling(){
+		System.out.println("all four wheelers will have steering");
+	}
+}

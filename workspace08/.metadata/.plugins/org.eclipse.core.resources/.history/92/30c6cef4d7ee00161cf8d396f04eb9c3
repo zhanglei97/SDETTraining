@@ -1,0 +1,18 @@
+package com.fannie.collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapExp1 {
+	public static void main(String[] args) {
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		
+		map.put("Sunita", 10);
+		map.put("Sunita", 103);
+		map.put("Sunita", 1312540);
+		map.put("Sunita", 13130);
+		map.put("Sunita", 13410);
+
+		System.out.println(map);
+	}
+}

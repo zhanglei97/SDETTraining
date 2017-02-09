@@ -1,0 +1,20 @@
+package com.fannie.ass1;
+
+public class Car extends Vehicle {
+	public Car(String color, int wheelCount, String make, String model) {
+		super(color, wheelCount, make, model);
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getSeatCnt() {
+		return seatCnt;
+	}
+
+	public void setSeatCnt(int seatCnt) {
+		this.seatCnt = seatCnt;
+	}
+
+	private int seatCnt;
+
+
+}

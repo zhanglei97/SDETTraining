@@ -1,0 +1,181 @@
+package com.fannie.ass1;
+
+public class Vehicle {
+	private String color;
+	private int wheelCount;
+	private String make;
+	private String model;
+	
+	public void move(){
+		System.out.println("All vehicle will move.");
+	}
+	
+	public void park(){
+		System.out.println    ("All vehicle need to park");
+	}
+	
+	public void drive(){
+		System.out.println("All vehicle drives on the road");
+	}
+	
+	public Vehicle(String color, int wheelCount, String make, String model) {
+		super();
+		this.color = color;
+		this.wheelCount = wheelCount;
+		this.make = make;
+		this.model = model;
+	}
+	
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public int getWheelCount() {
+		return wheelCount;
+	}
+	public void setWheelCount(int wheelCount) {
+		this.wheelCount = wheelCount;
+	}
+	public String getMake() {
+		return make;
+	}
+	public void setMake(String make) {
+		this.make = make;
+	}
+	public String getModel() {
+		return model;
+	}
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+}
+
+
+package com.fannie.ass1;
+
+public class Truck extends Vehicle{
+	public Truck(String color, int wheelCount, String make, String model) {
+		super(color, wheelCount, make, model);
+		// TODO Auto-generated constructor stub
+	}
+
+	private int weight;
+
+	public int getWeight() {
+		return weight;
+	}
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+	
+	public void loadCargo(){
+		System.out.println("a truck will load cargo.");
+	}
+
+	@Override
+	public String toString() {
+		return "Truck [weight=" + weight + ", getColor()=" + getColor() + ", getWheelCount()=" + getWheelCount()
+				+ ", getMake()=" + getMake() + ", getModel()=" + getModel() + "]";
+	}
+	
+
+}
+package com.fannie.ass1;
+
+public class Bus extends Vehicle {
+	private int passengerCnt;
+	@Override
+	public String toString() {
+		return "Bus [passengerCnt=" + passengerCnt + ", psgNum=" + psgNum + ", getColor()=" + getColor()
+				+ ", getWheelCount()=" + getWheelCount() + ", getMake()=" + getMake() + ", getModel()=" + getModel()
+				+ "]";
+	}
+
+	private int psgNum;
+	
+	public int getPassengerCnt() {
+		return passengerCnt;
+	}
+
+
+	public void setPassengerCnt(int passengerCnt) {
+		System.out.println("total allowed passenger is "+passengerCnt);
+		this.passengerCnt = passengerCnt;
+	}
+
+
+	public Bus(String color, int wheelCount, String make, String model) {
+		super(color, wheelCount, make, model);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void loadPassenger(int psgNum){
+		this.psgNum=this.psgNum+psgNum;
+		System.out.println("onboard passensger is now "+this.psgNum);
+	}
+	
+	
+
+}
+package com.fannie.ass1;
+
+public class Car extends Vehicle {
+	@Override
+	public String toString() {
+		return "Car [seatCnt=" + seatCnt + ", getColor()=" + getColor() + ", getWheelCount()=" + getWheelCount()
+				+ ", getMake()=" + getMake() + ", getModel()=" + getModel() + "]";
+	}
+
+	public Car(String color, int wheelCount, String make, String model) {
+		super(color, wheelCount, make, model);
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getSeatCnt() {
+		return seatCnt;
+	}
+
+	public void setSeatCnt(int seatCnt) {
+		this.seatCnt = seatCnt;
+	}
+
+	private int seatCnt;
+
+
+}
+package com.fannie.ass1;
+
+public class Road {
+	public static void main(String[] args) {
+		Vehicle [] vehicles =new Vehicle[5];
+		vehicles[0]= new Truck("White", 4, "Toyota" , "Tocama SR5");
+		vehicles[1]= new Bus("Yellow", 8, "AEC", "AEC Qtype" );
+		vehicles[2]= new Car("Sand", 4, "Honda", "Civic");
+		vehicles[3]= new Truck("Black", 18, "Volvo", "Detriot 105" );	
+		vehicles[4]= new Car("Red", 4, "Toyota", "Camery");
+		
+		for (Vehicle temp: vehicles ){
+			System.out.println(temp);
+			if (temp instanceof Car){
+				((Car) temp).setSeatCnt(4);
+			}else if (temp instanceof Truck){
+				((Truck) temp).setWeight(18);
+			}else if (temp instanceof Bus){
+				((Bus) temp).setPassengerCnt(38);
+				((Bus) temp).loadPassenger(22);
+			}
+			
+			temp.drive();
+			temp.park();
+			System.out.println(temp);
+			System.out.println("----------------------");
+
+		}
+		
+	}
+
+}

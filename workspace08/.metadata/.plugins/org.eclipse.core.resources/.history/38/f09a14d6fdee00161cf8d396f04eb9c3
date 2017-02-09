@@ -1,0 +1,26 @@
+package com.fannie.db;
+
+import static org.junit.Assert.fail;
+
+import org.junit.Test;
+
+import com.fannie.dbworks.EmpBean;
+import com.fannie.dbworks.EmployeeDB;
+
+public class DBTest {
+	//to make the method as test case, it has to be annotated by @Test
+	@Test
+	public void inserEmployeePassTest() {
+		
+		EmployeeDB edb = new EmployeeDB();
+		EmpBean bean = new EmpBean();
+		edb.instertEmployee(bean);
+	
+	}
+
+	@Test
+	public void inserEmployeeFailTest() {
+		fail("Not yet implemented");
+		
+	}
+}

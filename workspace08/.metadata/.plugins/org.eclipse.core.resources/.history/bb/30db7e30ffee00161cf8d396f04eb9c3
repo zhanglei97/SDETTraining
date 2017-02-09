@@ -1,0 +1,32 @@
+package com.fannie.db;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.fannie.dbworks.EmpBean;
+import com.fannie.dbworks.EmployeeDB;
+
+import junit.framework.Assert;
+
+public class DBTest {
+	//to make the method as test case, it has to be annotated by @Test
+	@Test
+	public void inserEmployeePassTest() {
+		
+		EmployeeDB edb = new EmployeeDB();
+		EmpBean bean = new EmpBean();
+		assertEquals("Testing to check employee db pass", true, edb.instertEmployee(bean));
+		
+	
+	}
+
+	@Test
+	public void inserEmployeeFailTest() {
+		EmployeeDB edb = new EmployeeDB();
+		EmpBean bean = new EmpBean();
+		assertEquals("Testing to check employee db fail", false, edb.instertEmployee(bean));
+		assertNotEquals("Testing to check employee db fail", false, edb.instertEmployee(bean));
+		
+	}
+}
