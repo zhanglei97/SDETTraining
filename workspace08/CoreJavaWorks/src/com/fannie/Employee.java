@@ -1,4 +1,4 @@
-package com.fannie;
+package com.fannie.bean;
 
 public class Employee {
 	public Employee(){};

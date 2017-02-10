@@ -1,0 +1,18 @@
+
+
+go to mysql terminal
+
+show databases
+
+create database sdet308;
+
+use sdet308;
+
+create table employee(
+empid int primary key auto_increment,
+empname varchar(30),
+empsal decimal(9,2),
+empemail varchar(50));
+
+
+desc employee;
