@@ -1,5 +1,11 @@
 https://sdettraining.litmos.com/course/472458
 
+ sdet308@sdettraining.com 
+
+mysql:
+
+pwd hexaware
+
 go to mysql terminal
 
 show databases

@@ -459,3 +459,25 @@
 2017-02-10 15:15:09,264 [Worker-6] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
 2017-02-10 15:15:10,247 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-02-10 15:15:10,247 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\gitworks\SDETTraining\workspace08\Mavenworks1\src\main\resources
+2017-02-10 15:15:10,247 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-10 15:15:10,247 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\gitworks\SDETTraining\workspace08\Mavenworks1\src\test\resources
+2017-02-10 15:44:17,003 [Worker-23] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: come.fannie:Mavenworks1:0.0.1-SNAPSHOT @ C:\gitworks\SDETTraining\workspace08\Mavenworks1\pom.xml.
+2017-02-10 15:44:17,471 [Worker-23] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.22/mysql-connector-java-5.1.22.pom
+2017-02-10 15:44:17,580 [Worker-23] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.22/mysql-connector-java-5.1.22.pom
+2017-02-10 15:44:17,674 [Worker-23] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.22/mysql-connector-java-5.1.22.jar
+2017-02-10 15:44:18,423 [Worker-23] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/mysql/mysql-connector-java/5.1.22/mysql-connector-java-5.1.22.jar
+2017-02-10 15:44:19,000 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-10 15:44:19,000 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\gitworks\SDETTraining\workspace08\Mavenworks1\src\main\resources
+2017-02-10 15:44:19,000 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-10 15:44:19,000 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\gitworks\SDETTraining\workspace08\Mavenworks1\src\test\resources
+2017-02-10 15:45:42,804 [Worker-25] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongo-java-driver/3.1.0/mongo-java-driver-3.1.0.pom
+2017-02-10 15:45:42,913 [Worker-25] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongo-java-driver/3.1.0/mongo-java-driver-3.1.0.pom
+2017-02-10 15:45:42,929 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: come.fannie:Mavenworks1:0.0.1-SNAPSHOT @ C:\gitworks\SDETTraining\workspace08\Mavenworks1\pom.xml.
+2017-02-10 15:45:43,022 [Worker-25] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongo-java-driver/3.1.0/mongo-java-driver-3.1.0.jar
+2017-02-10 15:45:43,412 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/mongodb/mongo-java-driver/3.1.0/mongo-java-driver-3.1.0.jar
+2017-02-10 15:45:44,255 [Worker-25] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongo-java-driver/3.1.0/mongo-java-driver-3.1.0.jar
+2017-02-10 15:45:45,113 [Worker-16] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/mongodb/mongo-java-driver/3.1.0/mongo-java-driver-3.1.0.jar
+2017-02-10 15:45:45,581 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-10 15:45:45,581 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\gitworks\SDETTraining\workspace08\Mavenworks1\src\main\resources
+2017-02-10 15:45:45,581 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-02-10 15:45:45,596 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\gitworks\SDETTraining\workspace08\Mavenworks1\src\test\resources
