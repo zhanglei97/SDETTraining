@@ -22,3 +22,10 @@ empemail varchar(50));
 
 
 desc employee;
+
+
+use sdet 308
+create table account(
+Account_Number int primary key auto_increment,
+Balance  decimal(9,2),
+Average_Balance decimal(9,2));

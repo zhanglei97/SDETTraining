@@ -1,0 +1,22 @@
+write a java program to find synonym for the given word.  if the synonym is found the return the list of the synonyms else throw an exception called SynonymNotFound with the message as "Sorry word not found in the dictionary"
+
+initialize the list of words in the map in the static section of the application
+and the same as to be invoked by Class.forName("");
+when ever the request for the synyoms has come, store the count in DB
+
+
+pojo plain old java object.
+
+http://bit.ly/1oFeNR0
+
+RMI  remote message interface
+
+uniform resource locator   URL
+uniform resource interface  URI
+electronic data interchange  edi
+
+apach - tomcat
+oracle - weblogic
+ibm - web shphere
+jboss - jboss
+sun - glassfish

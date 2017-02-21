@@ -1,0 +1,5 @@
+package com.fannie.bean;
+
+public class Account {
+
+}

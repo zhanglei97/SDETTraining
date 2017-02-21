@@ -1,0 +1,5 @@
+package com.fannie.connection;
+
+public class GetConnection {
+
+}

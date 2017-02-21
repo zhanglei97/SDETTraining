@@ -1,9 +1,0 @@
-package com.fannie.inhe;
-
-public class VehicleClient {
-	public static void main(String[] arg){
-		Vehicle [] vehicles = new Vehicle[5];
-		vehicles[0].move();
-	}
-
-}

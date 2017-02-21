@@ -1,0 +1,12 @@
+package com.fannie.bean;
+
+
+public class Account {
+	private int accID;
+	private double actBal;
+	private double avgActBal;
+	
+	
+	
+	
+}

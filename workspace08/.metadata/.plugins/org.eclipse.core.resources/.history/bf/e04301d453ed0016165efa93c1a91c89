@@ -1,9 +1,0 @@
-package com.fannie.intf;
-
-public interface Loan {
-	void submitLoan();
-	void loanAmount(int amount);
-	void foreClosure();
-	void foreClosure(int amount);
-
-}

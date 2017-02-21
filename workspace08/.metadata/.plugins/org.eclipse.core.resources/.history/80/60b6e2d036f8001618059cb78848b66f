@@ -1,0 +1,11 @@
+package com.fannie.interfaces;
+
+import java.util.List;
+
+public interface IAccountDAO {
+	public boolean insertAccount(Account emp);
+	public List<Employee> getAllEmps();
+	public Employee getEmp(int empId);
+	public boolean updateEmp(int empId, double newSal);
+	public boolean deleteEmp(int empId);
+}
