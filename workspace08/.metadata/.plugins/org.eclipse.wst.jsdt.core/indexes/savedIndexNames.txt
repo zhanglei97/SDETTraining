@@ -1,7 +1,2 @@
 INDEX VERSION 1.3+C:\gitworks\SDETTraining\workspace08\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2363555623.index
-2635243418.index
-1708716869.index
-1057570053.index
 1877551396.index
-3279034933.index

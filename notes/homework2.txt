@@ -65,3 +65,15 @@ sox simple object for xml
 			}
 	]
 }
+
+# means current page in html.
+
+
+http://localhost:8080/DymamicWorks/resources/message/1 ->get
+1: get the 1st message
+
+ttp://localhost:8080/DymamicWorks/resources/message/1/comments ->get
+comments: get the all the comments of the first message
+
+ttp://localhost:8080/DymamicWorks/resources/message/1/comments/3 ->get
+get 3rd comments of the 1st message
