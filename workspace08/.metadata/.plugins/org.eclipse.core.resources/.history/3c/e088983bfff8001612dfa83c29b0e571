@@ -1,0 +1,44 @@
+package com.fannie.bankimpl;
+
+import com.fannie.bank.CreditInterest;
+import com.fannie.bank.DepositAccount;
+
+public class SavingsAcc implements DepositAccount, CreditInterest   {
+
+	@Override
+	public void addMonthlyInt() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addHalfYrlyInt() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addAnnualInt() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void withdraw() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deposit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getBalance() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

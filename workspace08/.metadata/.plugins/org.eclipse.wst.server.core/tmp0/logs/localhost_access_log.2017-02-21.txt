@@ -25,3 +25,6 @@
 0:0:0:0:0:0:0:1 - - [21/Feb/2017:12:20:04 -0500] "GET /DymamicWorks/dontsayhello.html HTTP/1.1" 200 234
 127.0.0.1 - - [21/Feb/2017:12:25:09 -0500] "GET / HTTP/1.1" 404 994
 0:0:0:0:0:0:0:1 - - [21/Feb/2017:12:25:09 -0500] "GET /DymamicWorks/dontsayhello.html HTTP/1.1" 200 234
+127.0.0.1 - - [21/Feb/2017:12:25:57 -0500] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [21/Feb/2017:12:25:58 -0500] "GET /DymamicWorks/WEB-INF/web.xml HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [21/Feb/2017:12:26:07 -0500] "GET /DymamicWorks/ HTTP/1.1" 200 234

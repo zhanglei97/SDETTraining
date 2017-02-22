@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="jquery-1.12.1.js"></script>
+
+<script type="text/javascript">
+	// ananymous function it gets called implicitly 
+	$(function(){
+		var options ={
+			url:"http://localhost:9090/RestSoap1/resources/message",
+			method:"GET", 
+			dataType:"json", 
+			success: function(data){
+				var table = $("<table border='1'>");
+					data.forEach(function(d){
+						var row =	$("<tr>");
+						var td1 =$("<td>").append(d.msg);
+
+						var img =$("<img>").attr("src", "http://localhost:9090/RestSoap1/assets/messages/"+d.messageId+".png")
+							.attr('height', 100)
+							.attr('width', 100);
+						var td2 = $("<td>").append(img);
+						row.append(td1).append(td2);
+						table.append(row);
+						});
+					 
+						$("#categoryList").html(table);
+					}
+			};
+		$.ajax(options);
+	});
+</script>
+
+
+</head>
+<body>
+	<h1>Category Details</h1>
+
+	<div id="categoryList"></div>
+</body>
+</html>

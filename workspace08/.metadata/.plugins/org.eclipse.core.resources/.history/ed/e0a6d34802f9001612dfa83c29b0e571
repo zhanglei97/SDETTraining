@@ -1,0 +1,62 @@
+package com.fannie.bankimpl;
+
+import com.fannie.bank.DebitInterest;
+import com.fannie.bank.LoanAcc;
+
+public class PersonalLoanAcc implements LoanAcc,  DebitInterest{
+
+	@Override
+	public void deductMonthlyInt() {
+		// TODO Auto-generated method stub
+		System.out.println("dedict monthly interest");
+		
+	}
+
+	@Override
+	public void deductHalfYrlyInt() {
+		// TODO Auto-generated method stub
+		System.out.println("dedict half year interest");
+		
+	}
+
+	@Override
+	public void deductAnnualInt() {
+		// TODO Auto-generated method stub
+		System.out.println("dedict annual interest");
+		
+	}
+
+	@Override
+	public void repayPrincipal() {
+		// TODO Auto-generated method stub
+		System.out.println("repay principal");
+		
+	}
+
+	@Override
+	public void payInterest() {
+		// TODO Auto-generated method stub
+		System.out.println("pay interest");
+		
+	}
+
+	@Override
+	public void payPartialPrincipal() {
+		// TODO Auto-generated method stub
+		System.out.println("pay partial principal");
+		
+	}
+
+	@Override
+	public void createAcc() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void calcInt() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.fannie.bankimpl;
+
+import com.fannie.bank.DepositAccount;
+
+public class FDAcc implements DepositAccount. CreditInterest{
+
+}

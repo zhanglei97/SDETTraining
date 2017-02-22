@@ -53,4 +53,6 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.fannie.interfaces.IAccountDAO"/>
 <fullyQualifiedTypeName name="com.fannie.dao.AccountDAO"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
 </qualifiedTypeNameHistroy>

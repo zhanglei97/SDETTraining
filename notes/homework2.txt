@@ -4,10 +4,14 @@ initialize the list of words in the map in the static section of the application
 and the same as to be invoked by Class.forName("");
 when ever the request for the synyoms has come, store the count in DB
 
+http://todomvc.com/
+
 
 pojo plain old java object.
 
 http://bit.ly/1oFeNR0
+
+http://bit.ly.21rNyJy
 
 RMI  remote message interface
 
@@ -20,3 +24,44 @@ oracle - weblogic
 ibm - web shphere
 jboss - jboss
 sun - glassfish
+
+
+sox simple object for xml
+
+//sample xml document 
+<?xml version="1.0"?>
+<emps>
+	<emp salutation="mr">
+		<name>
+			<fname>Harry</fname>
+			<lname>potter</lname>
+		</name>
+		<age>44</age>
+		<dept-name>test</dept-name>
+	</emp>
+
+	<emp salutation="mrs">
+		<name>
+			<fname>Marry</fname>
+			<lname>Hlly</lname>
+		</name>
+		<age>44</age>
+		<dept-name>Accounts</dept-name>
+	</emp>
+</emps>
+
+{
+	emps[
+		emp:{
+			solution:"mr",
+			name:{
+				fname: "Harry",
+				lname: "potter",
+				},
+			age:33,
+			dept-name: "Accounts"
+			}
+		emp:{
+			}
+	]
+}

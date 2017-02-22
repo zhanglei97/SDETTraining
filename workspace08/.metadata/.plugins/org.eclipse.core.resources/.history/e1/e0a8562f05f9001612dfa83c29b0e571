@@ -1,0 +1,18 @@
+package com.fannie.bankimpl;
+
+import com.fannie.bank.Account;
+
+public class MyAccount {
+	public static void main(String[] args){
+		Account[] accounts =new Account[4];
+		
+		accounts[0]= new SavingsAcc("Amy", 34321432);
+		accounts[1]=new PersonalLoanAcc("Chang", 234.53);
+		accounts[2]= new FDAcc("David", 12324);
+
+		((SavingsAcc) accounts[0]).addMonthlyInt();
+
+		
+	}
+
+}
