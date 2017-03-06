@@ -1,0 +1,43 @@
+package com.fannie.tests;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class GoogleSearchTest {
+	  private WebDriver driver;
+	  private String baseUrl;
+	  private boolean acceptNextAlert = true;
+	  private StringBuffer verificationErrors = new StringBuffer();
+
+	  @Before
+	  public void setUp() throws Exception {
+	    driver = new FirefoxDriver();
+	    baseUrl = "https://www.google.com/";
+	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  }
+
+	  @Test
+	  public void testSearch() throws Exception {
+	    driver.get(baseUrl + "/");
+	    driver.findElement(By.id("lst-ib")).clear();
+	    driver.findElement(By.id("lst-ib")).sendKeys("the best place to visit in USA");
+	    driver.findElement(By.id("_fZl")).click();
+	    driver.findElement(By.xpath("//g-scrolling-carousel[@id='uid_WL24uQAAO3MKJuVFjg4Fqw_0']/div/div/div[2]/div/div[3]/a/div[2]/div/div/div")).click();
+	  }
+
+	  @After
+	  public void tearDown() throws Exception {
+	    driver.quit();
+	   
+	  }
+
+}

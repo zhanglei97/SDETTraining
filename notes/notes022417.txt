@@ -1,0 +1,213 @@
+"".matchc(/[0-9]+/);
+
+j-p: 
+"".matchs([/[j-p][b-zA-Z0-9]+[@][a-zA-Z0-9]+.[.]com/);
+
+
+
+
+db.emps.insert({empid:101, empname: 'kanchan', empsal: 2000});
+db.emps.insert({empid:102, empname: 'chan', empsal: 2000});
+db.emps.insert({empid:103, empname: 'britt', empsal: 2000});
+db.emps.insert({empid:104, empname: 'kan', empsal: 2000});
+db.emps.insert({empid:105, empname: 'kim', empsal: 2000});
+db.emps.insert({empid:106, empname: 'kim kkk', empsal: 2000});
+db.emps.insert({empid:107, empname: 'kim yyy', empsal: 2000});
+
+db.emps.insert({empid:111, empname: 'kanchan', empsal: 20300});
+db.emps.insert({empid:112, empname: 'chan', empsal: 200880});
+db.emps.insert({empid:113, empname: 'britt', empsal: 2.000});
+db.emps.insert({empid:114, empname: 'kan', empsal: 2000});
+db.emps.insert({empid:115, empname: 'kim', empsal: 200.30});
+db.emps.insert({empid:116, empname: 'kim kkk', empsal: 1000});
+db.emps.insert({empid:117, empname: 'kim yyy', empsal: 4000});
+
+
+
+db.emps.find();
+db.emps.find().pretty;
+
+db.emps.find({empid:101});
+
+db.emps.find({empname:'kim yyy'});
+
+
+db.emps.find({_id:58b453547512b367f4f7e45d});
+
+ "_id" : ObjectId("58b453547512b367f4f7e45d"),
+
+db.emps.findOne();
+
+show collections
+
+db.createCollection('account');
+
+db.createCollection('customer', {capped:true, size:2000, max:4});
+
+can go double quoe or single quo " or ', no diff, perfer single '
+
+db.customer.insert({custid:101, name: "Swetha"});
+db.customer.insert({custid:102, name: "shown dd"});
+db.customer.insert({custid:103, name: "merry"});
+db.customer.insert({custid:104, name: "albert"});
+db.customer.insert({custid:105, name: "frank"});
+
+
+db.customer.find({custid:{$gt:101}});
+
+gt
+ge
+lt
+le
+ne
+
+
+C:\mongoworks>mongodump
+2017-02-27T11:56:12.144-0500    writing admin.system.version to
+2017-02-27T11:56:12.148-0500    done dumping admin.system.version (1 document)
+2017-02-27T11:56:12.148-0500    writing sdet3.emps to
+2017-02-27T11:56:12.148-0500    writing sdet3.customer to
+2017-02-27T11:56:12.148-0500    writing sdet3.account to
+2017-02-27T11:56:12.152-0500    done dumping sdet3.account (0 documents)
+2017-02-27T11:56:12.153-0500    done dumping sdet3.emps (10 documents)
+2017-02-27T11:56:12.427-0500    done dumping sdet3.customer (4 documents)
+
+C:\mongoworks>mongoimport
+2017-02-27T11:56:38.759-0500    no collection specified
+2017-02-27T11:56:38.760-0500    using filename '' as collection
+2017-02-27T11:56:38.760-0500    error validating settings: invalid collection na
+me: collection name cannot be an empty string
+2017-02-27T11:56:38.760-0500    try 'mongoimport --help' for more information
+
+C:\mongoworks>mongoimport --Population.json
+2017-02-27T11:57:28.421-0500    error parsing command line options: unknown opti
+on "Population.json"
+2017-02-27T11:57:28.422-0500    try 'mongoimport --help' for more information
+
+C:\mongoworks>mongoimport --file Population.json
+2017-02-27T11:57:37.905-0500    no collection specified
+2017-02-27T11:57:37.905-0500    using filename 'Population' as collection
+2017-02-27T11:57:38.617-0500    connected to: localhost
+2017-02-27T11:57:40.159-0500    imported 29353 documents
+
+C:\mongoworks>mongoimport --db sdet3 --file Population.json
+2017-02-27T11:58:21.165-0500    no collection specified
+2017-02-27T11:58:21.166-0500    using filename 'Population' as collection
+2017-02-27T11:58:21.176-0500    connected to: localhost
+2017-02-27T11:58:22.350-0500    imported 29353 documents
+
+C:\mongoworks>mongoimport --db sdet3 --collection student --file Population.json
+
+2017-02-27T11:59:04.822-0500    connected to: localhost
+2017-02-27T11:59:05.960-0500    imported 29353 documents
+
+
+C:\mongoworks>mongoimport --db sdet3 --collection cusi  --file Population.json --jsonArray
+
+
+sort:
+
+ db.emps.find({}, {empid:1, empsal:1, _id:0}).sort({empsal:1});
+
+ db.emps.find({}, {empid:1, empsal:1, _id:0}) display empid, don't display _id (by default _id always display)
+
+ db.emps.find({}, {empid:1, empsal:1, _id:0}).sort({empsal:1}); sort assending, -1 for decending
+
+
+only display the ID in 101, 107:
+
+db.emps.find({empid: {$in:[101, 107]}})
+
+
+and condition: 
+db.emps.find({empid: {$in:[101,104, 116, 117]}, empsal:{$gt:1000}})
+
+add sort:
+
+db.emps.find({empid: {$in:[101,104, 116, 117]}, empsal:{$gt:1000}}).sort({empsal:1, empid:-1})
+
+
+skip first 2 records:
+
+db.emps.find({empid: {$in:[101,104, 116, 117]}, empsal:{$gt:1000}}).sort({empsal:1, empid:-1}).skip(2)
+
+only display 1 record:
+db.emps.find({empid: {$in:[101,104, 116, 117]}, empsal:{$gt:1000}}).sort({empsal:1, empid:-1}).skip(2).limit(1)
+
+
+embeded documents
+db.account.insert({accid: 101, balance: 10000, customer:{custid: 'c101', customname: 'lei'}, location:'reston'})
+db.account.insert({accid: 102, balance: 20000, customer:{custid: 'c102', customname: 'chary'}, location:'reston'})
+
+db.account.insert({accid: 103, balance: 14000, customer:{custid: 'c103', customname: 'britt'}, location:'reston'})
+db.account.insert({accid: 104, balance: 20900, customer:{custid: 'c102', customname: 'chary'}, location:'reston'})
+db.account.insert({accid: 105, balance: 14000, customer:{custid: 'c103', customname: 'britt'}, location: ['reston', 'herdon', 'dc']})
+db.account.insert({accid: 106, balance: 20900, customer:{custid: 'c102', customname: 'chary'}, location:['reston', 'dc']})
+
+
+db.account.find().pretty();
+
+db.account.find({'customer.customname':'britt'}).pretty();
+
+
+db.account.find({'location':'reston'}).pretty();
+
+
+
+
+
+db.food.insert({_id:1, type:'food', item:'aaa', rating: [1, 3, 4]})
+db.food.insert({_id:2, type:'food', item:'bbb', rating: [1,2, 4]})
+db.food.insert({_id:3, type:'food', item:'ccc', rating: [2, 3, 4]})
+db.food.insert({_id:4, type:'food', item:'ddd', rating: [1, 3, 5]})
+db.food.insert({_id:5, type:'food', item:'eee', rating: [1, 2,4]})
+db.food.insert({_id:6, type:'food', item:'aaa', rating: [5,8]})
+db.food.insert({_id:7, type:'food', item:'bbb', rating: [5,8, 8]})
+
+db.food.insert({_id:9, type:'food', item:'ddd', rating: [1, 3,8, 5]})
+db.food.insert({_id:10, type:'food', item:'eee', rating: [1,8 2,4]})
+
+exact match
+
+anywhere in the array
+db.food.find({rating:5})
+
+find value of the rating is 5
+db.food.find({'rating.0':5})
+
+all that has rating less than 5
+db.food.find({rating:{$elemMatch:{$lt:5}}})
+
+db.emps.update({empsal:{$gt:5000}},{$set:{city:'reston'}})
+
+db.epms.createindex(
+
+db.emps.update({empid:{$lt:105}},{$set:{empsal:11111111}})
+
+
+db.emps.find({empid:{$lt:105}})
+
+
+db.Population.find({pop:{$gt:30000}}).explain('executionStats')
+
+db.Population.find().explain('executionStats')
+
+
+db.emps.createIndex({empid:1},{unique:true})
+
+db.emps.delete({empid:101})
+db.Population.createIndex({pop:1})
+
+db.emps.totalIndexSize()
+db.Population.getIndexes()
+
+
+. current directory
+,, parent directory
+/ root
+
+/user/shweta/home/fol1
+
+
+
+

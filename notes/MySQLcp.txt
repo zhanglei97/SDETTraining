@@ -1,0 +1,31 @@
+https://sdettraining.litmos.com/course/472458
+
+ sdet308@sdettraining.com 
+
+mysql:
+
+pwd hexaware
+
+go to mysql terminal
+
+show databases
+
+create database sdet308;
+
+use sdet308;
+
+create table employee(
+empid int primary key auto_increment,
+empname varchar(30),
+empsal decimal(9,2),
+empemail varchar(50));
+
+
+desc employee;
+
+
+use sdet 308
+create table account(
+Account_Number int primary key auto_increment,
+Balance  decimal(9,2),
+Average_Balance decimal(9,2));

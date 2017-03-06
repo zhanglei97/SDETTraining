@@ -1,8 +1,0 @@
-package com.fannie.resource;
-
-import javax.ws.rs.Path;
-
-@Path("/message")
-public class MessageResource {
-
-}

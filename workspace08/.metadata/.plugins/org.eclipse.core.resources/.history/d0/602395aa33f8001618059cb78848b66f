@@ -1,5 +1,0 @@
-package com.fannie.interfaces;
-
-public class IAccountDao {
-
-}

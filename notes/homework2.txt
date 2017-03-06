@@ -77,3 +77,22 @@ comments: get the all the comments of the first message
 
 ttp://localhost:8080/DymamicWorks/resources/message/1/comments/3 ->get
 get 3rd comments of the 1st message
+
+
+db.emps.insert({empid:111, empname: 'kanchan', empsal: 20300});
+db.emps.insert({empid:112, empname: 'chan', empsal: 200880});
+db.emps.insert({empid:113, empname: 'britt', empsal: 2.000});
+db.emps.insert({empid:114, empname: 'kan', empsal: 2000});
+db.emps.insert({empid:115, empname: 'kim', empsal: 200.30});
+db.emps.insert({empid:116, empname: 'kim kkk', empsal: 1000});
+db.emps.insert({empid:117, empname: 'kim yyy', empsal: 4000});
+
+
+
+
+
+db.emps.find({}, {empsal:1, _id:0}).sort({empsal:-1});
+no condition
+
+empsal:1, _id:0}): don't want to see _id, display empsal 
+sort decending

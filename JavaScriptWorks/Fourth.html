@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type = "text/javascript">
+
+            function fn(){
+                console.log("fn called without param");
+                console.log("chk arg ");
+                console.log(fn.arguments);
+                for(i=0; i<fn.arguments.length; i++){
+                    console.log(fn.arguments[i]);
+                    console.log("chk")
+                }
+                
+            }
+/*            function fn(val){
+                console.log("fn called with one param")
+            }*/
+
+            
+        </script>
+        
+
+    </head>
+    <body>
+        <script type = "text/javascript">
+
+            //fn();
+            //fn("33");
+            fn("33", "444", "dakfas;fjaslk;dkfj;lasdkjf;adslfjadsl;fjk");
+    
+        </script>
+    </body>
+</html>

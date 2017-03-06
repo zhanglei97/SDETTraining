@@ -1,0 +1,17 @@
+{
+  "name": "banking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "SpecRunner.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^3.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

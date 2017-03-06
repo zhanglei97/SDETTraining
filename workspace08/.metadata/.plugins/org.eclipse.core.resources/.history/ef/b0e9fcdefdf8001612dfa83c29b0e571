@@ -1,8 +1,0 @@
-package com.fannie.bank;
-
-public interface DepositAccount {
-	public void withdraw();
-	public void deposit();
-	public void getBalance();
-
-}

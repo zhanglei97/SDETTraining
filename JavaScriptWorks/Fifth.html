@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+        <script>
+        function fnValidate(){
+            uname=document.loginForm.uname.value;
+            console.log("uname: "+uname);
+
+            if(uname.length<6){
+                alert("Sorry Name should be min 6 chars")
+                return false;
+            }else if(uname.charAt(0)==" "){
+                alert("Name can't be having leading spaces")
+                return false;
+            }
+
+        }
+
+        function fnReset(){
+            document.loginForm.uname="";
+            document.loginForm.pwd="";
+            console.log("form reset");
+        }
+        </script>
+
+     
+    </head>
+
+
+
+    <body bgcolor="#ADD8E6">
+
+       
+<button><a href="#"><i class="icon-camera-retro icon-fixed-width"></i>icon-camera-retro</a></button>
+        <h1>Login Form</h1>
+        <form name="loginForm" method="GET" onsubmit="fnValidate()" onreset="fnReset()"> 
+            <table class="table table-striped" border="5"  align="center" bgcolor="lightyellow" bordercolor="#0033FF"
+                <tr>
+                    <td>Enter User Name</td>
+                    <td><input  type = "text" name ="uname" /></td>
+
+                </tr>
+
+                 <tr>
+                    <td>Enter Password</td>
+                    <td><input class="icon-collapse"type = "text" name ="pwd" required="required"/></td>
+
+                </tr>
+                <tr>
+                    <td>Enter Date of Birth</td>
+                    <td><input type="date" name="dob" required="required"/></td>
+                </tr>
+
+
+                 <tr>
+                    <td><input type ="reset"  name="reset"/></td>
+                    <td><input type = "submit" name ="LOGIN" /></td>
+
+                    <td><button class="icon-collapse" onclick="fnValidate">LOGIN</button></td>
+
+                </tr>
+            </table>
+            
+        </form>
+
+    </body>
+</html>

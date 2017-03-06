@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function fnFirst(){
+                obj = new Object;
+                obj.a=10;
+                obj.b=20
+
+                console.log(obj.a);
+                console.log(obj.b);
+                console.log(obj.c); //undefined
+            }
+
+            function Emp(empid, empname){
+                this.empID = empid;
+                this.empName = empname;
+                this.display = function(){
+                    console.log("emp id: "+emp.empID);
+                    console.log("emp name: "+ emp.empName);
+                }
+
+                var privateMethod = function(){
+                    console.log("this can't access")
+                }
+            }
+
+
+            Emp.prototype.myDisp = function(){
+                    console.log("myDispemp id: "+emp.empID);
+                    console.log("myDispemp name: "+ emp.empName);
+            }
+        
+            
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            fnFirst();
+
+            emp = new Emp (101, 'becky');
+            emp.myDisp();
+            emp.display();
+            //emp.privateMethod();
+
+        </script>
+    </body>
+</html>

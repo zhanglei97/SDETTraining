@@ -1,0 +1,199 @@
+FIST.HTML
+
+<html>
+<head>
+    <script type ="text/javascript" src="First.js"></script>
+</head>
+
+
+<body>
+    <h1><b>Welcome to shwetas page</b></h1>
+<input type="button" onclick="javascript:fnHello()"
+value ="Click Me Hello" />
+
+<input type="button" onclick="javascript:fnHi()"
+value ="Click Me Hi" />
+
+     <script type ="text/javascript">
+   console.log("Welcome from body of a nerd")
+</script>
+
+
+<div id="myDiv">
+    <br>
+    </br>
+</div>
+
+<!--This content will be changed -->
+
+</div>
+
+</body>
+    </html>
+	**********************************************************************************************************************
+	JAVASCRIPT: First.js
+	 function fnHello(){
+    console.log("Welcome from fnHello of a nerd")
+
+    // if you have var prefixed with var it is private
+//var var1="hi";
+//var2 = "bye"; //this is public var as there are only 2 types os var 1 pub and other priv.
+
+var name =prompt("Enter your name:")
+var age =parseInt(prompt("Enter your age:", "20"))
+var myDiv=document.getElementById("myDiv");
+console.log("your name is " + name);
+
+
+if(age>18){
+    //console.log("your are good to have licence");
+    //var myDiv=document.getElementById("myDiv");
+    myDiv.innerHTML=("your are good to have licence");
+}else{
+//console.log("your cant have a licence");
+document.getElementById("myDiv").innerHTML=("your cant have a licence");
+}
+
+ }
+
+ function fnHi(){
+    console.log("Welcome from fnHi of a nerd")
+
+//console.log("value of var1 is"+var1);
+//console.log("value of var2 is"+var2);
+
+
+    }
+	
+**********************************************************************************************************************
+
+
+Second HTML
+<html>
+    <head>
+            <script type ="text/javascript">
+            function fnFirst() {
+                obj = new Object;
+                obj.a=10;
+                obj.b=20;
+
+                console.log(obj.a)
+                console.log(obj.b)
+                console.log(obj.c)
+            }
+            
+            function EMP(empid, empName) {
+                this.empid =empid;
+                this.empName=empName;
+
+                this.display= function()
+                {
+                console.log("Emp ID:" +EMP.empid);
+                console.log("Emp Name:" +EMP.empName);
+
+                privateMethod(); //it can be accessed within the class
+                }
+
+              //  var myDisplay = function(){
+            //   console.log("Emp ID:" +EMP.empid);
+             //console.log("Emp Name:" +EMP.empName)
+               // }
+            }
+
+        var privateMethod= function()
+        { 
+            console.log("This can't be accessed");
+
+        }
+             EMP.prototype.myDisplay= function(){
+             console.log("Emp ID:" +EMP.empid);
+             console.log("Emp Name:" +EMP.empName)
+                }
+
+</script>
+
+            
+    </head>
+    <body>
+
+         <script type ="text/javascript">
+             fnFirst();
+
+             EMP= new EMP(101,'tina');
+            //console.log("Emp ID:" +emp.empid);
+            // console.log("Emp Name:" +emp.empName);
+            EMP.myDisplay();
+            EMP.display();
+            EMP.privateMethod();// it can't be accessed as it is outside teh class
+
+         </script>
+    </body>
+    </html>
+	
+	**********************************************************************************************************************
+	
+	THIRD HTML
+	
+<html>
+<head>
+    <script type ="text/javascript">
+    function Emp(){}
+    
+    function dnGArray(){
+
+        arr= new Array(4);
+
+        arr[0] ="hi";
+        arr[1] ="true";
+        arr[2] = 44222;
+        arr[3] = new Emp;
+      
+      console.log ("Number of elements" + arr.length)
+
+
+      for (temp in arr){
+          console.log(arr[temp]);
+      }
+
+
+    }
+
+    function fnArray() {
+       arr= new Array(3);
+
+        arr[0] ="SUN";
+        arr[1] ="Mon";
+        arr[2] ="Tue";
+        console.log(arr)
+
+
+//stack operation, push with val and pop with val
+        arr.push("Wed","Thus");
+        console.log(arr)
+
+        arr.pop();
+        console.log(arr)
+//shift takes it off and unshift puts
+        arr.unshift("one"); //puts one
+        console.log(arr)
+
+        arr.shift(); //take off one
+        console.log(arr)
+
+//splice (1,0,3,4) --> go to first don't delete and ass 3 and 4
+
+
+arr.splice(1,0, "hello", "how","are","you");
+console.log(arr)
+
+
+    }
+    </script>
+</head>
+
+<body>
+<input type ="button" value ="click G" onclick="dnGArray()" />
+<input type ="button" value ="click S" onclick="fnArray()" />
+</body>
+</html>
+	

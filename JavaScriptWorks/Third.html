@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <script type = "text/javascript">
+        function Emp(){
+
+        }
+
+        function fnGArray(){
+            arr = new Array(4);
+
+            arr[0]= "jo1";
+            arr[1]= "jo2";
+            arr[2]= "jo3";
+            arr[3]= "jo4";
+            arr[80]= new Emp();
+
+            console.log("number of element "+arr.lengh)
+
+            for (tmp in arr){
+                console.log(arr[tmp]);
+            }
+        }
+
+        function fnSArray(){
+            arr = new Array(4);
+
+            arr[0]= "Sun";
+            arr[1]= "Mon";
+            arr[2]= "Tue";
+            console.log(arr);
+
+            arr.push("Wed");
+            arr.push("Thu");
+            arr.push("Fri");
+            console.log(arr);
+
+            arr.pop();
+            console.log(arr);
+
+            arr.push("Jan","Feb");
+            console.log(arr);
+
+            arr.unshift("one");
+            console.log("unshift to add to first");
+            console.log(arr);
+
+            arr.shift();
+            console.log("shift to remove first");
+            console.log(arr);
+
+            arr.splice(1, 1, "Hello", "how", "are");
+            console.log("splice 1: ");
+            console.log(arr);
+
+            arr.splice(1, 2, "aaa", "bbb", "ccc");
+            console.log("splice 1, 2: ");
+            console.log(arr);
+        }
+
+
+
+
+        </script>
+
+    </head>
+    <body>
+        <input type="button" value="Click G" onclick="fnGArray()"/>
+        <input type="button" value="Click S" onclick="fnSArray()"/>
+    </body>
+</html>

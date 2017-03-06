@@ -1,0 +1,5 @@
+127.0.0.1 - - [24/Feb/2017:16:55:44 -0500] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [24/Feb/2017:16:55:46 -0500] "GET /DymamicWorks/WEB-INF/classes/com/fannie/service/MessageService.java HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [24/Feb/2017:16:56:04 -0500] "GET /DymamicWorks/resources/message HTTP/1.1" 200 158
+0:0:0:0:0:0:0:1 - - [24/Feb/2017:16:56:17 -0500] "GET /DymamicWorks/WEB-INF/classes/com/fannie/service/MessageService.java HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [24/Feb/2017:16:56:26 -0500] "GET /DymamicWorks/resources/message HTTP/1.1" 200 158

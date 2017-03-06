@@ -1,0 +1,30 @@
+<?xml version ="1.0"?>
+<loans>
+        <Mortgage_loan>
+            <custname>Jeff</custname>
+            <loanamount>3434</loanamount>
+            <city>DC</city>
+            <loanOrigination>
+                <OriginationDate>01-12-1998</OriginationDate>
+                <OriginationAmount>31243124</OriginationAmount>
+            </loanOrigination>
+            <lenderInfo>
+                <creditScore>677</creditScore>
+                <DTI>80</DTI>
+            </lenderInfo>
+        </Mortgage_loan>
+        <Mortgage_loan>
+            <custname>Harry</custname>
+            <loanamount>34343434</loanamount>
+            <city>Reston</city>
+            <loanOrigination>
+                <OriginationDate>01-12-1998</OriginationDate>
+                <OriginationAmount>31243124</OriginationAmount>
+            </loanOrigination>
+            <lenderInfo>
+                <creditScore>677</creditScore>
+                <DTI>80</DTI>
+            </lenderInfo>
+        </Mortgage_loan>
+        
+</loans>
