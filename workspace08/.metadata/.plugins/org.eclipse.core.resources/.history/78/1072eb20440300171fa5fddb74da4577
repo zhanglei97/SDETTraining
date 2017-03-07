@@ -1,0 +1,58 @@
+package com.fannie.tests;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestCase04 {
+	 private WebDriver driver;
+	  private String baseUrl;
+
+
+	  @Before
+	  public void setUp() throws Exception {
+		System.setProperty("webdriver.chrome.driver", "C:\\gitworks\\SDETTraining\\chromedriver.exe");
+	    driver = new ChromeDriver();
+//	    System.setProperty("webdriver.ie.driver", "C:\\gitworks\\SDETTraining\\IEDriverServer.exe");
+//	    driver = new InternetExplorerDriver();
+
+	    baseUrl = "http://naveenks.com/selenium/RegForm.html";
+	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  }
+	  
+		@Test
+		public void clickRadioCheck() throws InterruptedException {
+			driver.get(baseUrl);
+		    System.out.println("title "+driver.getTitle());
+		    String currentURL = driver.getCurrentUrl();
+		    System.out.println("current URL: "+currentURL);
+		    
+		    WebElement genderMale = driver.findElement(By.id("genderMale"));
+		    WebElement genderFemale = driver.findElement(By.id("genderFemale"));
+		    WebElement genderTrans = driver.findElement(By.id("genderTrans"));
+		    
+		    genderMale.click();
+		    System.out.println("genderMale click, genderMale "+genderMale.isSelected());
+		    System.out.println("genderMale click, genderFemale "+genderFemale.isSelected());
+		    System.out.println("genderMale click, genderTrans "+genderTrans.isSelected());
+		    Thread.sleep(2500);
+		    genderFemale.click();
+
+		    genderMale.click();
+		    
+		    }
+
+
+	  @After
+	  public void tearDown() throws Exception {
+	    driver.quit();
+	   
+	  }
+
+}

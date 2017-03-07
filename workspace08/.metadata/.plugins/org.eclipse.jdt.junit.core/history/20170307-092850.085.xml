@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestCase03" project="SeleniumWorks" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.fannie.tests.TestCase03" time="130.344">
+    <testcase name="clickRadioCheck" classname="com.fannie.tests.TestCase03" time="86.638"/>
+    <testcase name="clickCheckboxCheck" classname="com.fannie.tests.TestCase03" time="18.504"/>
+    <testcase name="clickCheckParameter" classname="com.fannie.tests.TestCase03" time="25.202"/>
+  </testsuite>
+</testrun>
